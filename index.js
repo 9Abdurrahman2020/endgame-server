@@ -17,7 +17,6 @@ const client = new MongoClient(uri, {
 const mongodbServer = async () => {
   try {
     await client.connect();
-    console.log("mongodb Server is connected");
     const db = client.db("endgame");
     const doctorsCollection = db.collection("doctors");
     const servicesCollection = db.collection("services");
