@@ -155,7 +155,7 @@ const mongodbServer = async () => {
 };
 mongodbServer().catch(console.dir);
 app.get("/", (req, res) => {
-  res.json("My hospital server is running");
+  res.json("My hospital server is running on Heroku");
 });
 app.listen(port, () => {
   console.log("My hospital server is running on " + port);
